@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/TimerApp.css"],"names":[],"mappings":"AAAA,EACE,QAAS,CACT,SAAU,CACV,qBACF,CAEA,WACE,kBAAwB,CACxB,6BAAsB,CAAtB,0BAAsB,CAAtB,qBACF","file":"main.c5de589f.chunk.css","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n.container {\n  margin: 80px auto 0 auto;\n  max-width: fit-content;\n}"]}

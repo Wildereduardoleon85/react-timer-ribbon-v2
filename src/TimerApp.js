@@ -30,14 +30,14 @@ function TimerApp() {
     /**
      * reset values once the timer has expired
      */
-    if (remainingTime < 0 || remainingTime >= USER_ID_TIME_SESSION) {
+    if (remainingTime < 0 || remainingTime > USER_ID_TIME_SESSION) {
       localStorage.removeItem('sessionTimeStamp')
       setRemainingTime(0)
       clearInterval(interval)
     }
 
     return () => clearInterval(interval)
-  }, [remainingTime])
+  }, [remainingTime, expirationTimeFromLocalStorage])
 
   /**
    * Transform milliseconds remaining time into date format to be able to extract the desired
